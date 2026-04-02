@@ -6,7 +6,7 @@ import SectionThree from "./components/sections/section-three";
 
 export default function App() {
   return (
-    <div className="max-w-[1366px] flex flex-col mx-auto overflow-hidden">
+    <div className="max-w-[1366px] flex flex-col mx-auto overflow-x-hidden overflow-y-scroll">
       <Nav/>
       <Hero/>
       <SectionOne/>
