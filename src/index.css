@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Gerbil';
+  src: url('./assets/gerbil.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/Satoshi-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: 'Satoshi';
+    /* background-color: black;
+    color: white; */
+}
