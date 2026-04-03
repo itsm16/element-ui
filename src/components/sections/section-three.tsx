@@ -51,8 +51,8 @@ const col3 = [
 
 export default function SectionThree() {
   return (
-      <div className="my-30 grid grid-cols-4">
-        <div className="images relative">
+      <div className="md:my-30 my-15 grid md:grid-cols-4 grid-cols-1">
+        <div className="images relative md:block hidden">
             {col1.map((img, index) => (
                 <SingleImage key={index} src={img.src} alt={img.src} className={img.className}/>
             ))}
@@ -63,15 +63,14 @@ export default function SectionThree() {
                 <h1>say <Text text="about us" variant="scribble"/></h1>
             </div>
             <div className="text-xl cursor-pointer hover:scale-101 duration-300 rounded-[45px] py-6 w-[90%] px-15 bg-[#f3faf5] text-center">
-                <p><img src={comma} alt="comma" className="inline-block mr-3 w-12" />Elementum delivered the site with in the timeline as they requested. In the end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable <img src={comma} alt="comma" className="inline-block ml-2 w-12 rotate-180" /></p>
+                <p className="text-[0.8rem] md:text-[1.2rem]"><img src={comma} alt="comma" className="inline-block mr-3 md:w-12 w-4" />Elementum delivered the site with in the timeline as they requested. In the end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable <img src={comma} alt="comma" className="inline-block ml-2 md:w-12 w-4 rotate-180" /></p>
             </div>
         </div>
-        <div className="images relative">
+        <div className="images relative md:block hidden">
             {col3.map((img, index) => (
                 <SingleImage key={index} src={img.src} alt={img.src} className={img.className}/>
             ))}
         </div>
-
     </div>
   )
 }

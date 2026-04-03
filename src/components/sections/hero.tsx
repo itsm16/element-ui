@@ -10,8 +10,8 @@ export default function Hero() {
     <>
       <div className="font-[gerbil] text-5xl md:text-6xl flex-col flex text-center md:pt-36 pt-10 md:leading-[1.5] leading-[1.1]">
         <p className="z-20 cursor-pointer">The <Text text="thinkers" className="bottom-[-8.5px]" variant="scribble"/> and</p>
-        <p className="z-20 cursor-pointer">doers were <Text text="changing" variant="capsule" width="w-[72%] top-[8px] h-[85%]"/></p>
-        <p className="z-20 cursor-pointer">the <Text text="status" variant="capsule" bgColor="bg-[#d7eedd]" width="w-[115%] top-[5px] right-[-15px] h-[85%]"/> Quo with</p>
+        <p className="z-20 cursor-pointer">doers were <Text text="changing" variant="capsule" width="md:w-[72%] md:top-[8px] md:h-[85%] w-[71%] h-[53px]"/></p>
+        <p className="z-20 cursor-pointer">the <Text text="status" variant="capsule" bgColor="bg-[#d7eedd]" width="w-[115%] md:top-[5px] top-[2px] right-[-15px] h-[85%]"/> Quo with</p>
         <img src={curves} alt="curves"
           className="absolute md:w-25 w-12 left-0 md:bottom-50 bottom-95"
         />

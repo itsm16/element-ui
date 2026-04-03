@@ -10,11 +10,11 @@ const footerItems = [
 
 export default function SectionFour() {
   return (
-    <div className="grid grid-rows-2 h-max gap-5 bg-[#D7EEDD] py-25 relative w-[full] ">
-        <img src={arrows} alt="arrows" className="absolute top-0 md:left-[38%] md:size-[15%]" />
-        <div className="text-center h-max flex flex-col items-center gap-2 max-w-[1366px] place-self-center">
+    <div className="grid md:grid-rows-2 h-max gap-5 bg-[#D7EEDD] md:py-25 py-10 relative w-[full] ">
+        <img src={arrows} alt="arrows" className="absolute top-0 md:left-[38%] left-15" />
+        <div className="text-center h-max flex flex-col items-center gap-2 max-w-[1366px] mt-22 place-self-center">
           <div className='self-end relative w-full'>
-            <img src={semicircle} alt="semicircle" className="absolute md:right-[-70%] md:top-12 md:w-30"/>
+            <img src={semicircle} alt="semicircle" className="absolute md:right-[-70%] md:top-12 md:w-30 w-12 right-[-20px]"/>
           </div>
             <h1 className="text-4xl md:text-5xl font-[gerbil]">Subscribe to</h1>
             <h1 className="text-4xl md:text-5xl font-[gerbil]">our newsletter</h1>
@@ -24,7 +24,7 @@ export default function SectionFour() {
 
         {/* footer */}
         <div className='mt-10 pb-10 px-20 h-full'>
-          <div className='grid grid-cols-4 border-t pt-15'>
+          <div className='grid md:grid-cols-4 gap-10 md:gap-0 border-t pt-15'>
             {footerItems.map((item, index) => (
               <div key={index} className=''>
                 <h2 className='text-xl font-[gerbil]'>{item.title}</h2>
