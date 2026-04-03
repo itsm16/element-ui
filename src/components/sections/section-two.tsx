@@ -26,16 +26,17 @@ export default function SectionTwo() {
                 <p><Text text='offer' variant='scribble' className='z-10' /> you!</p>
                 <img src={string2} alt="string2" className="absolute md:right-[-15%] right-[-30%] bottom-[-15%] w-[70%] z-0" />
             </div>
-            <div>
+            <div className='relative'>
                 {tableData.map((item, index) => (
-                    <div className={`cursor-pointer hover:scale-101 duration-300 grid md:grid-cols-4 grid-cols-2 items-center gap-5 border-[#B1B1B1] py-5 ${index === 0 ? 'border-t border-b' : 'border-b'}`} key={index}>
-                        <h3 className='w-[200px] cursor-pointer'>{item.h3}</h3>
-                        <h1 className='text-4xl font-[gerbil] w-[600px] col-span-2 cursor-pointer md:block hidden'>{item.h1}</h1>
-                        <a href="" className='flex justify-center '>
-                            <img src={arrow} alt="arrow" className='w-[100px]'/>
+                    <div className={`cursor-pointer hover:scale-101 duration-300 grid md:grid-cols-4 grid-cols-2 items-center gap-5 border-[#B1B1B1] py-6 z-10 ${index === 0 ? 'border-t border-b' : 'border-b'}`} key={index}>
+                        <h3 className='w-[200px] cursor-pointer z-10'>{item.h3}</h3>
+                        <h1 className='text-4xl font-[gerbil] w-[600px] col-span-2 cursor-pointer md:block hidden z-10'>{item.h1}</h1>
+                        <a href="" className='flex justify-center z-10'>
+                            <img src={arrow} alt="arrow" className='w-[100px] z-10'/>
                         </a>
                     </div>
                 ))}
+                <img src={logo} alt="logo" className='w-22 absolute md:bottom-1 md:right-[38%] md:block hidden z-0' />
             </div>
         </div>
     )
