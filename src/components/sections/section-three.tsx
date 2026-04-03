@@ -1,14 +1,14 @@
 import Text from "../text";
 import comma from '../../assets/comma.png'
-import col1Img1 from '../../assets/section-images/one/col1-img1.png'
-import col1Img2 from '../../assets/section-images/one/col1-img2.png'
-import col1Img3 from '../../assets/section-images/one/col1-img3.png'
-import col1Img4 from '../../assets/section-images/one/col1-img4.png'
+import col1Img1 from '../../assets/section-images/sec-three/one/col1-img1.png'
+import col1Img2 from '../../assets/section-images/sec-three/one/col1-img2.png'
+import col1Img3 from '../../assets/section-images/sec-three/one/col1-img3.png'
+import col1Img4 from '../../assets/section-images/sec-three/one/col1-img4.png'
 
-import col3Img1 from '../../assets/section-images/three/col3-img1.png'
-import col3Img2 from '../../assets/section-images/three/col3-img2.png'
-import col3Img3 from '../../assets/section-images/three/col3-img3.png'
-import col3Img4 from '../../assets/section-images/three/col3-img4.png'
+import col3Img1 from '../../assets/section-images/sec-three/three/col3-img1.png'
+import col3Img2 from '../../assets/section-images/sec-three/three/col3-img2.png'
+import col3Img3 from '../../assets/section-images/sec-three/three/col3-img3.png'
+import col3Img4 from '../../assets/section-images/sec-three/three/col3-img4.png'
 import SingleImage from "../single-image";
 
 const col1 = [
@@ -26,7 +26,7 @@ const col1 = [
     },
     {
         src: col1Img4,
-        className: "h-25 w-25 bottom-[2%] left-[0%]"
+        className: "h-25 w-25 bottom-[2%] left-[5%]"
     }
 ]
 
@@ -45,7 +45,7 @@ const col3 = [
     },
     {
         src: col3Img4,
-        className: "h-45 w-45 bottom-[2%] right-[0%]"
+        className: "h-45 w-45 bottom-[2%] right-[5%]"
     }
 ]
 
@@ -62,7 +62,7 @@ export default function SectionThree() {
                 <h1><Text text="What" bgColor="bg-[#d7eedd]" variant="capsule" width="w-[115%] top-[-20%] h-[120%] right-[-5%]"/> our customers</h1>
                 <h1>say <Text text="about us" variant="scribble"/></h1>
             </div>
-            <div className="text-xl rounded-[45px] py-6 w-[90%] px-15 bg-[#f3faf5] text-center">
+            <div className="text-xl cursor-pointer hover:scale-101 duration-300 rounded-[45px] py-6 w-[90%] px-15 bg-[#f3faf5] text-center">
                 <p><img src={comma} alt="comma" className="inline-block mr-3 w-12" />Elementum delivered the site with in the timeline as they requested. In the end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable <img src={comma} alt="comma" className="inline-block ml-2 w-12 rotate-180" /></p>
             </div>
         </div>

@@ -3,15 +3,19 @@ import Nav from "./components/nav";
 import SectionOne from "./components/sections/section-one";
 import SectionTwo from "./components/sections/section-two";
 import SectionThree from "./components/sections/section-three";
+import SectionFour from "./components/sections/section-four";
 
 export default function App() {
   return (
-    <div className="max-w-[1366px] flex flex-col mx-auto overflow-x-hidden overflow-y-scroll">
+    <>
+    <div className="max-w-[1366px] flex flex-col mx-auto overflow-hidden">
       <Nav/>
       <Hero/>
       <SectionOne/>
       <SectionTwo/>
       <SectionThree />
     </div>
+    <SectionFour/>
+    </>
   )
 }

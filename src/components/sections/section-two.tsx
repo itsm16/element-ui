@@ -1,5 +1,5 @@
-import string2 from '../../assets/string2.svg'
-import logo from '..//../assets/logo.png'
+import string2 from '../../assets/section-images/sec-two/string2.svg'
+import logo from '../../assets/section-images/sec-two/logo.png'
 import Text from '../text'
 import arrow from '../../assets/arrow.svg'
 
@@ -28,11 +28,11 @@ export default function SectionTwo() {
             </div>
             <div>
                 {tableData.map((item, index) => (
-                    <div className={`grid grid-cols-4 items-center gap-5 border-[#B1B1B1] py-5 ${index === 0 ? 'border-t border-b' : 'border-b'}`} key={index}>
+                    <div className={`cursor-pointer hover:scale-101 duration-300 grid grid-cols-4 items-center gap-5 border-[#B1B1B1] py-5 ${index === 0 ? 'border-t border-b' : 'border-b'}`} key={index}>
                         <h3 className='w-[200px] cursor-pointer'>{item.h3}</h3>
                         <h1 className='text-4xl font-[gerbil] w-[600px] col-span-2 cursor-pointer'>{item.h1}</h1>
-                        <a href="">
-                            <img src={arrow} alt="arrow" />
+                        <a href="" className='flex justify-center'>
+                            <img src={arrow} alt="arrow" className='w-[100px]'/>
                         </a>
                     </div>
                 ))}
