@@ -14,7 +14,7 @@ export default function SectionFour() {
         <img src={arrows} alt="arrows" className="absolute top-0 md:left-[38%] left-15" />
         <div className="text-center h-max flex flex-col items-center gap-2 max-w-[1366px] mt-22 place-self-center">
           <div className='self-end relative w-full'>
-            <img src={semicircle} alt="semicircle" className="absolute md:right-[-70%] md:top-12 md:w-30 w-12 right-[-20px]"/>
+            <img src={semicircle} alt="semicircle" className="absolute md:right-[-40%] md:top-12 md:w-30 w-12 right-[-20px]"/>
           </div>
             <h1 className="text-4xl md:text-5xl font-[gerbil]">Subscribe to</h1>
             <h1 className="text-4xl md:text-5xl font-[gerbil]">our newsletter</h1>

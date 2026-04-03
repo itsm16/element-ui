@@ -51,7 +51,7 @@ export default function ImageSection() {
   return (
     <div className="px-10 md:py-30 py-10 pb-25 grid md:grid-cols-4 grid-cols-1 justify-center">
         {images.map((image, index) => (
-            <div className="md:block hidden">
+            <div key={index} className="md:block hidden">
                 <RoundImage 
                 key={index} 
                 variant={image.variant} 
@@ -64,7 +64,7 @@ export default function ImageSection() {
         ))}
 
         {images.slice(2,4).map((image, index) => (
-            <div className="md:hidden">
+            <div key={index} className="md:hidden">
                 <RoundImage 
                 key={index} 
                 variant={image.variant} 
