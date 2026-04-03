@@ -8,7 +8,7 @@ export default function Hero() {
     // inline one to modify and add between 
     // modification is adding colour capsules
     <>
-      <div className="font-[gerbil] text-5xl md:text-6xl flex-col flex text-center md:pt-36 pt-10 md:leading-[1.5] leading-[1.1]">
+      <div className="font-[gerbil] text-5xl md:text-6xl flex-col flex text-center md:pt-36 pt-10 md:leading-normal leading-[1.1]">
         <p className="z-20 cursor-pointer">The <Text text="thinkers" className="bottom-[-8.5px]" variant="scribble"/> and</p>
         <p className="z-20 cursor-pointer">doers were <Text text="changing" variant="capsule" width="md:w-[72%] md:top-[8px] md:h-[85%] w-[71%] h-[53px]"/></p>
         <p className="z-20 cursor-pointer">the <Text text="status" variant="capsule" bgColor="bg-[#d7eedd]" width="w-[115%] md:top-[5px] top-[2px] right-[-15px] h-[85%]"/> Quo with</p>

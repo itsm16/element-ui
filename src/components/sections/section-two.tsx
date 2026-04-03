@@ -28,7 +28,7 @@ export default function SectionTwo() {
             </div>
             <div className='relative'>
                 {tableData.map((item, index) => (
-                    <div className={`cursor-pointer hover:scale-101 duration-300 grid md:grid-cols-4 grid-cols-2 items-center gap-5 border-[#B1B1B1] py-6 z-10 ${index === 0 ? 'border-t border-b' : 'border-b'}`} key={index}>
+                    <div className={`cursor-pointer hover:scale-101 duration-300 grid md:grid-cols-4 grid-cols-2 items-center gap-5 border-[#B1B1B1] py-6 ${index === 0 ? 'border-t border-b' : 'border-b'}`} key={index}>
                         <h3 className='w-[200px] cursor-pointer z-10'>{item.h3}</h3>
                         <h1 className='text-4xl font-[gerbil] w-[600px] col-span-2 cursor-pointer md:block hidden z-10'>{item.h1}</h1>
                         <a href="" className='flex justify-center z-10'>
